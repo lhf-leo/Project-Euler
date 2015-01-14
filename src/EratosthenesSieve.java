@@ -2,7 +2,7 @@
 public class EratosthenesSieve {
 
 	public static void main(String[] args){
-		runEratosthenesSieve(1000000);
+		runEratosthenesSieve(100000);
 	}
 	
 	public static void runEratosthenesSieve(int upperBound) {
@@ -17,6 +17,6 @@ public class EratosthenesSieve {
 	      }
 	      for (int m = upperBoundSquareRoot; m <= upperBound; m++)
 	            if (!isComposite[m])
-	                  System.out.print(m + " ");
+	                  System.out.println(m + " ");//in some machines, print() may have no result.
 	}
 }
