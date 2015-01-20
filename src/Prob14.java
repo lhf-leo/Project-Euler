@@ -16,7 +16,26 @@ public class Prob14 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+		int max=0;
+		for(long i=1000000;i>1;i--){
+			int count=0;
+			long n=i;
+			while(n>1){
+				if(n%2==0){
+					n/=2;
+				}
+				else if(n%2==1){
+					n=n*3+1;
+				}
+				count++;
+
+			}
+			if(count>=max){
+				System.out.println(i);
+				max=count;
+			}
+		}
+
 	}
 
 }
